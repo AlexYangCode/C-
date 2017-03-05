@@ -1,0 +1,58 @@
+﻿body {
+    
+    /*background-image: url();*/
+    /*background-image: url('Resources/w4.jpg');*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+        
+
+
+
+.m1
+{
+    /*background:url("erp1.jpg");*/
+/*width:100%;*/
+text-align:center;
+margin: 0px;
+}
+.m1 ul
+{
+    padding: 0px;
+    list-style:none;
+    /*margin: 0px;*/
+}
+.m1 ul li
+{
+    width: 160px;
+    float: left;
+    /*display: inline-block;*/ 
+    text-align:center;
+    margin: 1px;
+}
+.m1 ul li a
+{
+font-family: Calibri;
+/*font-size: 20px;*/
+/*font-weight:bold;*/
+color: white;
+background: #b6ff00;
+text-decoration:none;
+padding: 10px;
+/*padding: 5px 5px 10px 0px;*/
+display:block;
+}
+.m1 ul li a:hover
+{
+    background-color: #4cff00;
+    color: #808080; 
+    /*font-size:24px;*/
+}
+.m1 ul li ul
+{
+    display:none;
+}
+.m1 ul li:hover ul
+{
+    display: block;
+}

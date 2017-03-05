@@ -1,0 +1,7 @@
+c:\users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\bin\KYMBusinessSolutions.dll
+c:\users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\bin\KYMBusinessSolutions.pdb
+c:\users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\obj\Debug\KYMBusinessSolutions.dll
+c:\users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\obj\Debug\KYMBusinessSolutions.pdb
+C:\Users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\obj\Debug\KYMBusinessSolutions.csprojResolveAssemblyReference.cache
+C:\Users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\obj\Debug\RdlCompile.cache
+C:\Users\lin\documents\visual studio 2010\Projects\KYMBusinessSolutions\KYMBusinessSolutions\obj\Debug\RdlCompile.compiled

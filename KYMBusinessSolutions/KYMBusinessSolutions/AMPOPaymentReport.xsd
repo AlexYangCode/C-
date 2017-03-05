@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Group01DataSet" targetNamespace="http://tempuri.org/Group01DataSet.xsd" xmlns:mstns="http://tempuri.org/Group01DataSet.xsd" xmlns="http://tempuri.org/Group01DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Group01ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Group01ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Group01ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="POPaymentTableAdapter" GeneratorDataComponentClassName="POPaymentTableAdapter" Name="POPayment" UserDataComponentName="POPaymentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Group01ConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT POInvoiceNum, PONumber,Supplier.SupplierBusiness_Name,Amount, Discount, Terms, TaxRate, FinalAmount, Status 
+                    FROM POPayments,Supplier where POPayments.SupplierID = Supplier.SupplierID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POInvoiceNum" DataSetColumn="POInvoiceNum" />
+              <Mapping SourceColumn="PONumber" DataSetColumn="PONumber" />
+              <Mapping SourceColumn="SupplierBusiness_Name" DataSetColumn="SupplierBusiness_Name" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="Terms" DataSetColumn="Terms" />
+              <Mapping SourceColumn="TaxRate" DataSetColumn="TaxRate" />
+              <Mapping SourceColumn="FinalAmount" DataSetColumn="FinalAmount" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Group01DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Group01DataSet" msprop:Generator_UserDSName="Group01DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="POPayment" msprop:Generator_TableClassName="POPaymentDataTable" msprop:Generator_TableVarName="tablePOPayment" msprop:Generator_TablePropName="POPayment" msprop:Generator_RowDeletingName="POPaymentRowDeleting" msprop:Generator_RowChangingName="POPaymentRowChanging" msprop:Generator_RowEvHandlerName="POPaymentRowChangeEventHandler" msprop:Generator_RowDeletedName="POPaymentRowDeleted" msprop:Generator_UserTableName="POPayment" msprop:Generator_RowChangedName="POPaymentRowChanged" msprop:Generator_RowEvArgName="POPaymentRowChangeEvent" msprop:Generator_RowClassName="POPaymentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POInvoiceNum" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPOInvoiceNum" msprop:Generator_ColumnPropNameInRow="POInvoiceNum" msprop:Generator_ColumnPropNameInTable="POInvoiceNumColumn" msprop:Generator_UserColumnName="POInvoiceNum" type="xs:int" />
+              <xs:element name="PONumber" msprop:Generator_ColumnVarNameInTable="columnPONumber" msprop:Generator_ColumnPropNameInRow="PONumber" msprop:Generator_ColumnPropNameInTable="PONumberColumn" msprop:Generator_UserColumnName="PONumber" type="xs:int" minOccurs="0" />
+              <xs:element name="SupplierBusiness_Name" msprop:Generator_ColumnVarNameInTable="columnSupplierBusiness_Name" msprop:Generator_ColumnPropNameInRow="SupplierBusiness_Name" msprop:Generator_ColumnPropNameInTable="SupplierBusiness_NameColumn" msprop:Generator_UserColumnName="SupplierBusiness_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Terms" msprop:Generator_ColumnVarNameInTable="columnTerms" msprop:Generator_ColumnPropNameInRow="Terms" msprop:Generator_ColumnPropNameInTable="TermsColumn" msprop:Generator_UserColumnName="Terms" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaxRate" msprop:Generator_ColumnVarNameInTable="columnTaxRate" msprop:Generator_ColumnPropNameInRow="TaxRate" msprop:Generator_ColumnPropNameInTable="TaxRateColumn" msprop:Generator_UserColumnName="TaxRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FinalAmount" msprop:Generator_ColumnVarNameInTable="columnFinalAmount" msprop:Generator_ColumnPropNameInRow="FinalAmount" msprop:Generator_ColumnPropNameInTable="FinalAmountColumn" msprop:Generator_UserColumnName="FinalAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:POPayment" />
+      <xs:field xpath="mstns:POInvoiceNum" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
